@@ -25,7 +25,7 @@ const FormField = ({
 
       <View className=" border-2 border-black-200 w-full h-16 px-4 bg-black-100 rounded-2xl focus:border-secondary flex-row items-center">
         <TextInput
-          className="flex-1 text-white font-psemibold text-base"
+          className="h-full flex-1 text-white font-psemibold text-base"
           value={value}
           placeholder={placeholder}
           placeholderTextColor="#7b7b8b"
@@ -38,6 +38,7 @@ const FormField = ({
             onPress={() => {
               setShowPassword(!showPassword);
             }}
+            className="p-2"
           >
             <Image
               source={!showPassword ? icons.eye : icons.eyeHide}
